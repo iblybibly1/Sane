@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RonyaSane — Equestrian Services, Inkoo Finland</title>
+  <meta name="description" content="Professional equestrian services in Inkoo, Finland. Riding lessons, training, horse sitting and more with over 20 years of experience.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="navbar-brand">
+    <span>RonyaSane</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li class="nav-item">
+      <a href="#">Our Horses ▾</a>
+      <div class="dropdown">
+        <a href="horses/takku.html">Takku</a>
+        <a href="horses/beso.html">Beso</a>
+        <a href="horses/elvis.html">Elvis</a>
+        <a href="horses/vikke.html">Vikke</a>
+      </div>
+    </li>
+    <li><a href="services.html">Services &amp; Pricing</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== HERO SLIDESHOW =====
+  HOW TO ADD PHOTOS TO THE SLIDESHOW:
+  1. Upload your photo to the photos/slideshow/ folder in GitHub
+  2. Copy one of the <div class="hero-slide"> blocks below
+  3. Change the filename in background-image to match your new photo
+  Photo format: JPG, recommended size 1920x1080px
+-->
+<section class="hero">
+  <div class="hero-slides">
+    <div class="hero-slide active" style="background-image: url('photos/slideshow/slide1.jpg')"></div>
+    <div class="hero-slide" style="background-image: url('photos/slideshow/slide2.jpg')"></div>
+    <div class="hero-slide" style="background-image: url('photos/slideshow/slide3.jpg')"></div>
+    <!-- Add more: <div class="hero-slide" style="background-image: url('photos/slideshow/slide4.jpg')"></div> -->
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>RonyaSane</h1>
+    <p>Professional equestrian services in Inkoo, Finland — riding lessons, training &amp; horse care with 20+ years of experience.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="services.html" class="btn btn-primary">Our Services</a>
+      <a href="#horses" class="btn btn-outline">Meet the Horses</a>
+    </div>
+  </div>
+  <div class="hero-dots"></div>
+</section>
+
+<!-- ===== ACHIEVEMENTS TICKER =====
+  Edit the ticker-item spans to update achievements.
+  Duplicate all items at the bottom to keep the loop seamless.
+-->
+<div class="achievements-bar">
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span class="ticker-item">Beso — 1st place jumping 100cm, Spring 2024</span>
+      <span class="ticker-item">Takku — Dressage class A, Inkoo 2024</span>
+      <span class="ticker-item">Beso — Competition debut, Helsinki 2023</span>
+      <span class="ticker-item">Vikke — In-hand showing champion, 2022</span>
+      <span class="ticker-item">Ronya — 20 years in equestrian sport</span>
+      <!-- Duplicated for seamless scroll loop -->
+      <span class="ticker-item">Beso — 1st place jumping 100cm, Spring 2024</span>
+      <span class="ticker-item">Takku — Dressage class A, Inkoo 2024</span>
+      <span class="ticker-item">Beso — Competition debut, Helsinki 2023</span>
+      <span class="ticker-item">Vikke — In-hand showing champion, 2022</span>
+      <span class="ticker-item">Ronya — 20 years in equestrian sport</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT INTRO ===== -->
+<section class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <!-- Photo: photos/about/ronya.jpg — 800x1000px JPG -->
+        <img src="photos/about/ronya.jpg" alt="Ronya Sane" style="min-height:300px;background:#e8f1fb;">
+      </div>
+      <div class="about-text">
+        <h2>Vähän minusta</h2>
+        <p>Hi! I'm Ronya, born 1998 and based in Inkoo, Finland. I've been working with horses since I was 2 years old and competing since 2002 — over 20 years of passion, learning and growth.</p>
+        <p>I offer riding lessons, training, horse sitting and event services from my yard near the beautiful Kopparnäs recreational area. The facilities include a lit riding arena, gravel paths and forest trails.</p>
+        <p>I've competed in jumping, dressage and cross-country at regional levels and trained under several accomplished instructors. My greatest achievement? The feeling when a horse learns something new.</p>
+        <div class="stats-row">
+          <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Years Experience</div></div>
+          <div class="stat"><div class="stat-num">4</div><div class="stat-label">Horses &amp; Ponies</div></div>
+          <div class="stat"><div class="stat-num">3</div><div class="stat-label">Disciplines</div></div>
+        </div>
+        <br>
+        <a href="about.html" class="btn btn-primary">Read more about me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HORSES ===== -->
+<section class="section section-alt" id="horses">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Horses</h2>
+      <p>Meet the wonderful horses at RonyaSane</p>
+      <div class="divider"></div>
+    </div>
+    <div class="horses-grid">
+
+      <div class="horse-card">
+        <div class="horse-card-img">
+          <!-- Photo: photos/takku/takku-main.jpg — 800x600px JPG -->
+          <img src="photos/takku/takku-main.jpg" alt="Takku" style="min-height:220px;background:#c8daf0;">
+        </div>
+        <div class="horse-card-body">
+          <h3>Takku</h3>
+          <div class="horse-breed">Horse — All-rounder</div>
+          <p>Versatile and reliable, Takku works beautifully with riders of all levels — from first-timers to advanced competitors.</p>
+        </div>
+        <div class="horse-card-footer">
+          <a href="horses/takku.html" class="btn btn-primary" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Meet Takku →</a>
+        </div>
+      </div>
+
+      <div class="horse-card">
+        <div class="horse-card-img">
+          <!-- Photo: photos/beso/beso-main.jpg — 800x600px JPG -->
+          <img src="photos/beso/beso-main.jpg" alt="Beso" style="min-height:220px;background:#c8daf0;">
+        </div>
+        <div class="horse-card-body">
+          <h3>Beso</h3>
+          <div class="horse-breed">Horse — Competition Prospect</div>
+          <p>A young and talented horse who arrived from Spain in 2021. Beso is our exciting competition prospect with a bright future.</p>
+        </div>
+        <div class="horse-card-footer">
+          <a href="horses/beso.html" class="btn btn-primary" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Meet Beso →</a>
+        </div>
+      </div>
+
+      <div class="horse-card">
+        <div class="horse-card-img">
+          <!-- Photo: photos/elvis/elvis-main.jpg — 800x600px JPG -->
+          <img src="photos/elvis/elvis-main.jpg" alt="Elvis" style="min-height:220px;background:#c8daf0;">
+        </div>
+        <div class="horse-card-body">
+          <h3>Elvis</h3>
+          <div class="horse-breed">Shetland Pony — Companion</div>
+          <p>Our charming Shetland pony companion. Elvis loves trail rides and introducing the youngest riders to the world of horses.</p>
+        </div>
+        <div class="horse-card-footer">
+          <a href="horses/elvis.html" class="btn btn-primary" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Meet Elvis →</a>
+        </div>
+      </div>
+
+      <div class="horse-card">
+        <div class="horse-card-img">
+          <!-- Photo: photos/vikke/vikke-main.jpg — 800x600px JPG -->
+          <img src="photos/vikke/vikke-main.jpg" alt="Vikke" style="min-height:220px;background:#c8daf0;">
+        </div>
+        <div class="horse-card-body">
+          <h3>Vikke</h3>
+          <div class="horse-breed">Stallion — Retired 2024</div>
+          <p>A beautiful stallion who excelled in dressage and in-hand showing. Vikke retired in 2024 and now enjoys a peaceful life.</p>
+        </div>
+        <div class="horse-card-footer">
+          <a href="horses/vikke.html" class="btn btn-primary" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Meet Vikke →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES PREVIEW ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Services</h2>
+      <p>What we offer at RonyaSane</p>
+      <div class="divider"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🐴</div>
+        <h3>Riding Lessons</h3>
+        <p>Individual and group lessons for all levels — from first-time riders to advanced competitors.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏆</div>
+        <h3>Training</h3>
+        <p>Professional training in jumping, dressage and cross-country disciplines.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏡</div>
+        <h3>Horse Sitting</h3>
+        <p>Reliable, caring horse sitting so you can travel with complete peace of mind.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎉</div>
+        <h3>Event Services</h3>
+        <p>Horse-related event services, pony rides and more for special occasions.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="services.html" class="btn btn-primary">View All Services &amp; Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Get in Touch</h2>
+      <p>We'd love to hear from you</p>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <div class="contact-row"><span class="icon">📧</span><span>ronya@sane.fi</span></div>
+        <div class="contact-row"><span class="icon">📞</span><span>050 350 4398</span></div>
+        <div class="contact-row"><span class="icon">📍</span><span>Inkoo, Finland (near Kopparnäs)</span></div>
+        <div class="contact-row"><span class="icon">💳</span><span>Cash, bank transfer, MobilePay, invoicing</span></div>
+        <div class="contact-row"><span class="icon">⚠️</span><span>Cancellations require 24h notice</span></div>
+        <br>
+        <a href="photography.html" class="btn btn-primary">Browse Photography Shop</a>
+      </div>
+      <div class="contact-form-box">
+        <h3 style="color:var(--blue-dark);font-size:1.2rem;margin-bottom:1.25rem;">Send a message</h3>
+        <form action="mailto:ronya@sane.fi" method="get" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" name="email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option>Riding lesson enquiry</option>
+              <option>Training enquiry</option>
+              <option>Horse sitting</option>
+              <option>Event services</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="body" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>RonyaSane</h3>
+        <p>Professional equestrian services in Inkoo, Finland. Riding lessons, training, horse sitting and photography — with over 20 years of passion for horses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services &amp; Pricing</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horses</h4>
+        <ul>
+          <li><a href="horses/takku.html">Takku</a></li>
+          <li><a href="horses/beso.html">Beso</a></li>
+          <li><a href="horses/elvis.html">Elvis</a></li>
+          <li><a href="horses/vikke.html">Vikke</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 RonyaSane · ronya@sane.fi · 050 350 4398 · Inkoo, Finland</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

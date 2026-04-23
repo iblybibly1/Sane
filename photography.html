@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography — RonyaSane</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar-brand"><a href="index.html" style="color:inherit;text-decoration:none;"><span>RonyaSane</span></a></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-item">
+      <a href="#">Our Horses ▾</a>
+      <div class="dropdown">
+        <a href="horses/takku.html">Takku</a>
+        <a href="horses/beso.html">Beso</a>
+        <a href="horses/elvis.html">Elvis</a>
+        <a href="horses/vikke.html">Vikke</a>
+      </div>
+    </li>
+    <li><a href="services.html">Services &amp; Pricing</a></li>
+    <li><a href="photography.html" class="active">Photography</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div style="background:var(--blue-dark);padding:4rem 0 3rem;text-align:center;color:white;">
+  <h1 style="font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:0.75rem;">Photography</h1>
+  <p style="opacity:0.8;font-size:1.05rem;max-width:550px;margin:0 auto;">Event photos and equestrian photography available to purchase. Add photos to your basket and Ronya will send you payment instructions.</p>
+</div>
+
+<!-- INFO BAR -->
+<div style="background:var(--blue-pale);padding:1.25rem 0;border-bottom:1px solid #d0e4f7;">
+  <div class="container" style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;justify-content:center;font-size:0.9rem;color:var(--text-mid);">
+    <span>🔒 Photos are watermarked — full resolution delivered after payment</span>
+    <span>📧 Order via basket → Ronya contacts you with payment details</span>
+    <span>💳 Payment: bank transfer or MobilePay</span>
+  </div>
+</div>
+
+<!-- PHOTO GRID
+  HOW TO ADD PHOTOS:
+  1. Upload your photo to photos/photography/ folder in GitHub
+  2. Copy one of the photo-item blocks below
+  3. Update: data-title, data-price, and the img src
+  Photo format: JPG, 1200x800px recommended
+  Keep originals full-resolution; website shows compressed copies
+-->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Available Photos</h2>
+      <p>Click a photo and add it to your basket to purchase</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="photo-grid">
+
+      <!-- PHOTO ITEM — copy and repeat this block for each photo -->
+      <div class="photo-item" data-title="Beso — Spring Competition 2024" data-price="25">
+        <img src="photos/photography/photo-1.jpg" alt="Beso — Spring Competition 2024">
+        <div class="photo-watermark"><span class="photo-watermark-text">© RonyaSane</span></div>
+        <div class="photo-overlay">
+          <div class="photo-title">Beso — Spring Competition 2024</div>
+          <div class="photo-price">€25.00</div>
+          <button class="add-to-basket">Add to Basket</button>
+        </div>
+      </div>
+
+      <div class="photo-item" data-title="Takku — Dressage 2024" data-price="25">
+        <img src="photos/photography/photo-2.jpg" alt="Takku — Dressage 2024">
+        <div class="photo-watermark"><span class="photo-watermark-text">© RonyaSane</span></div>
+        <div class="photo-overlay">
+          <div class="photo-title">Takku — Dressage 2024</div>
+          <div class="photo-price">€25.00</div>
+          <button class="add-to-basket">Add to Basket</button>
+        </div>
+      </div>
+
+      <div class="photo-item" data-title="Elvis — Trail Ride" data-price="20">
+        <img src="photos/photography/photo-3.jpg" alt="Elvis — Trail Ride">
+        <div class="photo-watermark"><span class="photo-watermark-text">© RonyaSane</span></div>
+        <div class="photo-overlay">
+          <div class="photo-title">Elvis — Trail Ride</div>
+          <div class="photo-price">€20.00</div>
+          <button class="add-to-basket">Add to Basket</button>
+        </div>
+      </div>
+
+      <div class="photo-item" data-title="Vikke — In-hand Showing" data-price="25">
+        <img src="photos/photography/photo-4.jpg" alt="Vikke — In-hand Showing">
+        <div class="photo-watermark"><span class="photo-watermark-text">© RonyaSane</span></div>
+        <div class="photo-overlay">
+          <div class="photo-title">Vikke — In-hand Showing</div>
+          <div class="photo-price">€25.00</div>
+          <button class="add-to-basket">Add to Basket</button>
+        </div>
+      </div>
+
+      <div class="photo-item" data-title="Beso — Jumping Helsinki 2023" data-price="25">
+        <img src="photos/photography/photo-5.jpg" alt="Beso — Jumping Helsinki 2023">
+        <div class="photo-watermark"><span class="photo-watermark-text">© RonyaSane</span></div>
+        <div class="photo-overlay">
+          <div class="photo-title">Beso — Jumping Helsinki 2023</div>
+          <div class="photo-price">€25.00</div>
+          <button class="add-to-basket">Add to Basket</button>
+        </div>
+      </div>
+
+      <div class="photo-item" data-title="Yard at Kopparnäs" data-price="20">
+        <img src="photos/photography/photo-6.jpg" alt="Yard at Kopparnäs">
+        <div class="photo-watermark"><span class="photo-watermark-text">© RonyaSane</span></div>
+        <div class="photo-overlay">
+          <div class="photo-title">Yard at Kopparnäs</div>
+          <div class="photo-price">€20.00</div>
+          <button class="add-to-basket">Add to Basket</button>
+        </div>
+      </div>
+
+      <!-- Add more photo-item blocks here following the same pattern -->
+
+    </div>
+  </div>
+</section>
+
+<!-- BASKET TOGGLE BUTTON -->
+<button class="basket-toggle" aria-label="Open basket">
+  🛒
+  <span class="basket-badge" style="display:none;">0</span>
+</button>
+
+<!-- BASKET OVERLAY -->
+<div class="basket-overlay"></div>
+
+<!-- BASKET PANEL -->
+<div class="basket-panel">
+  <div class="basket-header">
+    <h3>Your Basket</h3>
+    <button class="basket-close" aria-label="Close basket">✕</button>
+  </div>
+  <div class="basket-items"></div>
+  <div class="basket-footer">
+    <div class="basket-total">
+      <span>Total:</span>
+      <span id="basket-total-amount">0.00 €</span>
+    </div>
+    <div class="basket-form">
+      <input type="text" id="buyer-name" placeholder="Your full name *" required>
+      <input type="email" id="buyer-email" placeholder="Your email address *" required>
+      <textarea id="buyer-note" placeholder="Any notes (optional)..."></textarea>
+    </div>
+    <button class="checkout-btn">Send Order to Ronya</button>
+    <p style="font-size:0.78rem;color:var(--text-mid);margin-top:0.75rem;text-align:center;">
+      Ronya will contact you at your email with payment instructions and then send you the full-resolution photos.
+    </p>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay">
+  <div class="modal">
+    <div class="modal-icon">✅</div>
+    <h3>Order Sent!</h3>
+    <p>Your order has been sent to Ronya. She will contact you shortly at your email with payment instructions and then send the full-resolution photos.</p>
+    <button class="btn btn-primary modal-close">Close</button>
+  </div>
+</div>
+
+<div class="toast"></div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>RonyaSane</h3><p>Professional equestrian services in Inkoo, Finland.</p></div>
+      <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services &amp; Pricing</a></li><li><a href="photography.html">Photography</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div class="footer-col"><h4>Horses</h4><ul><li><a href="horses/takku.html">Takku</a></li><li><a href="horses/beso.html">Beso</a></li><li><a href="horses/elvis.html">Elvis</a></li><li><a href="horses/vikke.html">Vikke</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 RonyaSane · ronya@sane.fi · 050 350 4398 · Inkoo, Finland</p></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

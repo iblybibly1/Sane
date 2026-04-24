@@ -144,6 +144,7 @@ a:hover { color: var(--blue-dark); }
 /* ===== SECTIONS ===== */
 .section { padding: 5rem 0; }
 .section-alt { background: var(--grey-light); }
+.section-white { background: var(--white); }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 .section-title { text-align: center; margin-bottom: 3rem; }
 .section-title h2 {

@@ -35,21 +35,28 @@
   </button>
 </nav>
 
-<!-- ===== HERO SLIDESHOW =====
-  HOW TO ADD PHOTOS TO THE SLIDESHOW:
-  1. Upload your photo to the photos/slideshow/ folder in GitHub
-  2. Copy one of the <div class="hero-slide"> blocks below
-  3. Change the filename in background-image to match your new photo
-  Photo format: JPG, recommended size 1920x1080px
+<!-- ===== HERO VIDEO BACKGROUND =====
+  FILE NAME : videos/hero.mp4
+  Upload your video to the "videos" folder in GitHub, named exactly: hero.mp4
+  Recommended format: MP4 (H.264), 1080p or 4K
+
+  SPEED CONTROL: change the number in  data-speed  below.
+    0.5  = half speed (slow, cinematic)
+    0.75 = slightly slower than normal  ← default
+    1.0  = normal speed
+    1.5  = 50% faster
 -->
 <section class="hero">
-  <div class="hero-slides">
-    <div class="hero-slide active" style="background-image: url('photos/slideshow/slide-1.jpg')"></div>
-    <div class="hero-slide" style="background-image: url('photos/slideshow/slide-2.jpg')"></div>
-    <div class="hero-slide" style="background-image: url('photos/slideshow/slide-3.jpg')"></div>
-    <!-- Add more slides: upload photo to photos/slideshow/, then copy a line above and update the filename -->
-    <!-- Example: <div class="hero-slide" style="background-image: url('photos/slideshow/slide-4.jpg')"></div> -->
-  </div>
+  <video
+    class="hero-video"
+    data-speed="0.75"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    src="videos/hero.mp4"
+  ></video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>RonyaSane</h1>
@@ -59,7 +66,6 @@
       <a href="#horses" class="btn btn-outline">Meet the Horses</a>
     </div>
   </div>
-  <div class="hero-dots"></div>
 </section>
 
 <!-- ===== ACHIEVEMENTS TICKER =====

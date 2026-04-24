@@ -9,35 +9,21 @@ if (hamburger && navLinks) {
   });
 }
 
-/* ===== HERO SLIDESHOW ===== */
-function initHeroSlideshow() {
-  const slides = document.querySelectorAll('.hero-slide');
-  const dotsContainer = document.querySelector('.hero-dots');
-  if (!slides.length) return;
-
-  let current = 0;
-  const dots = [];
-
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
-    dot.setAttribute('aria-label', 'Slide ' + (i + 1));
-    dot.addEventListener('click', () => goTo(i));
-    dotsContainer && dotsContainer.appendChild(dot);
-    dots.push(dot);
-  });
-
-  function goTo(n) {
-    slides[current].classList.remove('active');
-    dots[current] && dots[current].classList.remove('active');
-    current = (n + slides.length) % slides.length;
-    slides[current].classList.add('active');
-    dots[current] && dots[current].classList.add('active');
-  }
-
-  setInterval(() => goTo(current + 1), 5000);
+/* ===== HERO VIDEO SPEED =====
+   To change speed: edit  data-speed="0.75"  on the <video> tag in index.html
+   0.5 = half speed (slow/cinematic)
+   0.75 = slightly slower than normal  ← default
+   1.0 = normal speed
+   1.5 = 50% faster
+=============================== */
+function initHeroVideo() {
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
+  const speed = parseFloat(video.dataset.speed) || 1.0;
+  video.playbackRate = speed;
+  video.addEventListener('canplay', () => { video.playbackRate = speed; });
 }
-initHeroSlideshow();
+initHeroVideo();
 
 /* ===== GALLERY SLIDESHOW ===== */
 function initGallery(containerEl) {
